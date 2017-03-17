@@ -1,0 +1,14 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1489766554;s:6:"expire";i:1489770154;s:4:"tags";s:66:"da5_BLOCK_HTML,da5_CATALOG_PRODUCT_35,da5_CATALOG_PRODUCT,da5_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="35">
+    
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="product-price-35"                data-price-amount="349"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">AUD349.00</span>    </span>
+        </span>
+
+</div>

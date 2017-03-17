@@ -1,0 +1,8 @@
+{
+    "readiness_checks": {
+        "error": "<br/>Found non-writable path(s):<br/>/chroot/home/agedcare/agedcareandmedical.com.au/html/.htaccess<br/>/chroot/home/agedcare/agedcareandmedical.com.au/html/.htaccess.sample<br/>/chroot/home/agedcare/agedcareandmedical.com.au/html/.php_cs<br/>/chroot/home/agedcare/agedcareandmedical.com.au/html/.travis.yml<br/>/chroot/home/agedcare/agedcareandmedical.com.au/html/.user.ini",
+        "file_permissions_verified": false
+    },
+    "last_timestamp": 1489768083,
+    "current_timestamp": 1489768142
+}

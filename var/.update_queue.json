@@ -1,0 +1,10 @@
+{
+    "jobs": [
+        {
+            "name": "rollback",
+            "params": {
+                "backup_file_name": "/chroot/home/agedcare/agedcareandmedical.com.au/html/var/backups/1487912027_filesystem_media.tgz"
+            }
+        }
+    ]
+}

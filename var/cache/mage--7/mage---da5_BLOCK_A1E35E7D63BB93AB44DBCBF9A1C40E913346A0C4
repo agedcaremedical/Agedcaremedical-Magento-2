@@ -1,0 +1,76 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1489766553;s:6:"expire";i:1589766552;s:4:"tags";s:43:"da5_CATALOG_PRODUCT,da5_BLOCK_HTML,da5_MAGE";}
+ 
+    
+     
+        <div class="the-slideshow-wrapper-outer" >
+    
+            <div class="the-slideshow-wrapper">
+
+                <div class="the-slideshow    slider-arrows2 slider-pagination2 pagination-pos-over-bottom-centered">
+                    <div id="slideshow-54258ff5898725d83e69e2a99c17d13f" class="slides">
+                         
+                             
+                                <div class="item slide">
+                                    <div style="text-align: center;"><a href="http://agedcare.nextmp.net/about-magento-demo-store/"><img src="http://agedcare.nextmp.net/pub/media/wysiwyg/HomeBanner/Part-one-Banners-for-taoscreative_Amb_1920x300_1.jpg" alt="" /></a>
+</div>                                </div>
+                             
+                         
+                             
+                                <div class="item slide">
+                                    <img src="http://agedcare.nextmp.net/pub/media/wysiwyg/HomeBanner/2.jpg" alt="" /><div style="text-align: center;"><a href="#"></a></div>                                </div>
+                             
+                         
+                             
+                                <div class="item slide">
+                                    <div style="text-align: center;"><a href="#"><img src="http://agedcare.nextmp.net/pub/media/wysiwyg/HomeBanner/3.jpg" alt="" /></a></div>                                </div>
+                             
+                         
+                             
+                                <div class="item slide">
+                                    <div style="text-align: center;"><a href="#"><img src="http://agedcare.nextmp.net/pub/media/wysiwyg/HomeBanner/4.jpg" alt="" /></a></div>                                </div>
+                             
+                         
+                             
+                                <div class="item slide">
+                                    <div style="text-align: center;"><a href="#"><img src="http://agedcare.nextmp.net/pub/media/wysiwyg/HomeBanner/5.jpg" alt="" /></a></div>                                </div>
+                             
+                         
+                             
+                                <div class="item slide">
+                                    <div style="text-align: center;"><a href="#"><img src="http://agedcare.nextmp.net/pub/media/wysiwyg/HomeBanner/6.jpg" alt="" /></a></div>                                </div>
+                             
+                                            </div><!-- end: slides -->
+                </div><!-- end: the-slideshow -->
+
+                
+            </div><!-- end: the-slideshow-wrapper -->
+
+            </div><!-- end: the-slideshow-wrapper-outer -->
+    
+    <script type="text/javascript">
+    //<![CDATA[
+        requirejs(['jquery','owlcarousel'], function(jQuery, owlcarousel){
+            jQuery(function($) {
+                var $ = jQuery;
+                var owl = $('#slideshow-54258ff5898725d83e69e2a99c17d13f');
+                owl.owlCarousel({
+
+                    singleItem: true,
+
+                                    slideSpeed: 200,
+                                     paginationSpeed: 500,
+                                     autoPlay: 10000,
+                                     stopOnHover: true,
+                                     rewindNav: true,
+                    rewindSpeed: 600,
+                                      transitionStyle: 'fadeUp',
+                 navigation: true,
+                    navigationText: false
+
+                }); 
+
+            });
+        });
+    //]]>
+    </script>
+
