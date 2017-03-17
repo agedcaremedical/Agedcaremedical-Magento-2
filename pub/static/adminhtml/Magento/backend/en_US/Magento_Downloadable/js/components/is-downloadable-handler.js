@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/vendor/magento/module-downloadable/view/adminhtml/web/js/components/is-downloadable-handler.js

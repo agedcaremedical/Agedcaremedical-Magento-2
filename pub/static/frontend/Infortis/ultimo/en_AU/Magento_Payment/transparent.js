@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/vendor/magento/module-payment/view/frontend/web/transparent.js

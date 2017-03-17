@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/vendor/magento/module-marketplace/view/adminhtml/web/default.js

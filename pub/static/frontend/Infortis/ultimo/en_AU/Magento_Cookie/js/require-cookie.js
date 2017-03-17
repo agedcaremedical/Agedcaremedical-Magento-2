@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/vendor/magento/module-cookie/view/frontend/web/js/require-cookie.js

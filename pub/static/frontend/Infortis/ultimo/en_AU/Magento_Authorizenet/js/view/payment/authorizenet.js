@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/vendor/magento/module-authorizenet/view/frontend/web/js/view/payment/authorizenet.js

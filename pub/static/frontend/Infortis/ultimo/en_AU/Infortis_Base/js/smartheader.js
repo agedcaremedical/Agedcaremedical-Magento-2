@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/app/code/Infortis/Base/view/frontend/web/js/smartheader.js

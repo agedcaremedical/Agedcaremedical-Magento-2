@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/vendor/magento/module-catalog-inventory/view/adminhtml/web/js/components/use-config-min-sale-qty.js

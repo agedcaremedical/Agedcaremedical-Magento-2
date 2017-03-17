@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/app/code/Anowave/Ec/view/frontend/web/js/step-navigator/plugin.js

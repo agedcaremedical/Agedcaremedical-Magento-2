@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/lib/web/tiny_mce/themes/advanced/editor_template_src.js

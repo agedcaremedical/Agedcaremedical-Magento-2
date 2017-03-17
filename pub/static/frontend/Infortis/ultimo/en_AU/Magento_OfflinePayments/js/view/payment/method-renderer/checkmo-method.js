@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/vendor/magento/module-offline-payments/view/frontend/web/js/view/payment/method-renderer/checkmo-method.js

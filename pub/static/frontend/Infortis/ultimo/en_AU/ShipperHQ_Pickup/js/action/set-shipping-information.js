@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/app/code/ShipperHQ/Pickup/view/frontend/web/js/action/set-shipping-information.js

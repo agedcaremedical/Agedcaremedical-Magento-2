@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/app/code/Infortis/UltraMegamenu/view/frontend/web/js/ultramegamenu.js

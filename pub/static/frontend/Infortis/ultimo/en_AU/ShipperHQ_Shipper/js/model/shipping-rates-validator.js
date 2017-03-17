@@ -1,0 +1,1 @@
+/chroot/home/agedcare/agedcareandmedical.com.au/html/app/code/ShipperHQ/Shipper/view/frontend/web/js/model/shipping-rates-validator.js
