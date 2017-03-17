@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="shipperhq_carrier_set_request">
+        <observer name="shipperhq_calendar" instance="ShipperHQ\Calendar\Observer\SetSelectionsOnRateRequest"/>
+    </event>
+    <event name="shipperhq_carrier_rate_response_received">
+        <observer name="shipperhq_calendar_rate_response_process" instance="ShipperHQ\Calendar\Observer\SaveDetailFromRateResponse" />
+    </event>
+    <event name="shipperhq_additional_detail_checkout">
+        <observer name="shipperhq_calendar_additional_detail_checkout_process" instance="ShipperHQ\Calendar\Observer\ProcessDetailFromCheckout" />
+    </event>
+</config>

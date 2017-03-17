@@ -1,0 +1,13 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$product_id = $this->getRequest()->getParam('id');
+$product = $objectManager->get('Magento\Catalog\Model\Product')->load($product_id);
+ 
+
+if($product->getkey_features()):
+?>
+<div class="key_feat">
+    <h3 class="title"><?php echo __('Key Features')?></h3>
+<?php echo $product->getkey_features(); ?>
+</div>
+<?php endif; ?>

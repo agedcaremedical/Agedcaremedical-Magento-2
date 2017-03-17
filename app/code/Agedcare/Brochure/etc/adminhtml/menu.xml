@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <!--<add id="agedcare::base" title="Agedcare" module="Agedcare_Brochure" sortOrder="70" resource="Agedcare_Brochure::sample"/>
+        <add id="agedcare_brochure::brochure" title="Items" module="Agedcare_Brochure" sortOrder="10" parent="agedcare::base" action="agedcare_brochure/items/" resource="Agedcare_Brochure::items"/>-->
+        <add id="Magento_Catalog::products_brochure" title="Product Brochure" translate="title" module="Agedcare_Brochure" sortOrder="25" parent="Magento_Catalog::inventory" action="agedcare_brochure/items/" resource="Agedcare_Brochure::items"/>
+    </menu>
+</config>

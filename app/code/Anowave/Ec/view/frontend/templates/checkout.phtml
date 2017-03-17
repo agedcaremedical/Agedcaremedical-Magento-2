@@ -1,0 +1,76 @@
+<script type="text/javascript">
+
+	var data = <?php echo $block->getCheckoutPush() ?>;
+
+	var ecomm = 
+	{
+			i: [], /* ecomm_prodid[] array */
+			v: [], /* ecomm_pvalue[] array */
+			p: []  /* ecomm_pname[]  array */
+	}
+	
+	/* Set ecomm_pagetype */
+	
+	for (i = 0, l = data.ecommerce.checkout.products.length; i < l; i++)
+	{
+		ecomm.i.push(data.ecommerce.checkout.products[i].id);
+		ecomm.v.push(data.ecommerce.checkout.products[i].price);
+		ecomm.p.push(data.ecommerce.checkout.products[i].name);
+	}
+
+	if (window.google_tag_params)
+	{
+		window.google_tag_params.ecomm_prodid 		= ecomm.i;
+		window.google_tag_params.ecomm_pvalue		= ecomm.v;
+		window.google_tag_params.ecomm_pname		= ecomm.p;
+		window.google_tag_params.ecomm_pagetype 	= 'cart';
+		window.google_tag_params.ecomm_totalvalue 	= data.total;
+	}
+
+	/**
+	 * Track checkout step
+	 */
+	AEC.checkoutStep = function(previous, current, currentCode)
+	{
+		 data.ecommerce.checkout.actionField.step = 1 + current;
+
+		 dataLayer.push(data);
+	};
+
+	/**
+	 * Fire first step
+	 */	
+	EC.push(function(dataLayer)
+	{
+		dataLayer.push(data);
+	});
+
+	<?php
+	/**
+	 * Track Facebook Pixel Initiate Checkout
+	 */
+	?>
+	<?php if ($block->getHelper()->facebook()):?>
+	
+		if ("undefined" !== typeof fbq)
+		{
+			var content_ids = [], content_length = data.ecommerce.checkout.products.length;
+
+			for (i = 0, l = data.ecommerce.checkout.products.length; i < l; i++)
+			{
+				content_ids.push(data.ecommerce.checkout.products[i].id);
+			}
+
+			fbq("track", "InitiateCheckout", 
+			{
+				content_type:	'product',
+				content_name: 	'checkout',
+				content_ids:	content_ids,
+				num_items:		content_length,
+				currency: 		'<?php echo $block->getHelper()->getCurrency() ?>'
+			});
+		}
+	
+	<?php endif ?>
+
+</script>

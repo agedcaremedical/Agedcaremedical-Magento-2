@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="agedcareandmedical::base" title="Agedcareandmedical" module="Agedcareandmedical_Storelocator" sortOrder="70" resource="Agedcareandmedical_Storelocator::sample"/>
+        <add id="agedcareandmedical_storelocator::storelocator" title="Items" module="Agedcareandmedical_Storelocator" sortOrder="10" parent="agedcareandmedical::base" action="agedcareandmedical_storelocator/items/" resource="Agedcareandmedical_Storelocator::items"/>
+    </menu>
+</config>

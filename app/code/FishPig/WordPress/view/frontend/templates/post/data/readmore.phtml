@@ -1,0 +1,12 @@
+<?php
+/**
+ *
+**/
+?>
+<?php if ($post = $this->getPost()): ?>
+	<div class="post-readmore">
+		<div class="short_content"><?php echo myTruncate($post->getContent(),400) ?></div>
+		
+		<a href="<?php echo $post->getUrl() ?>" title="<?php echo $this->escapeHtml($post->getName()) ?>"><?php echo __('Continue Reading') ?><?php //echo __($this->getReadMoreText()) ?><span class="contnu_arr">&rarr;</span></a>
+	</div>
+<?php endif; ?>

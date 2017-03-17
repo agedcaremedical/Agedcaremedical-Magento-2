@@ -1,0 +1,88 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$active=$objectManager->create('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('productstocknotify/stocknotify/active', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+if($active == 1){
+?>
+<?php $id = $block->getParamId('id'); ?>
+<?php if($block->getStockItem($id) != 1): ?>
+<?php $cEmailId = $block->getCustomerEmail(); ?>
+<form id="stockform" data-mage-init='{"validation":{}}'>
+    <div class="email_subcribe" id="email_subcribe">
+        <ul class="stockform-list1">
+            <li>
+                <div class="input-box" style="margin-right:5px;">
+                    <input class="required input-text" type="email" id="email" name="email" placeholder="Enter Email When Back in Stock" value='<?php echo $cEmailId; ?>'/>
+                </div>
+                <div style="float:left;">
+                    <button id="notifyme" class="action primary" title="Notify me" type="submit">
+                        <span>NOTIFY ME</span>
+                    </button>
+                    <input type="hidden" name="pro_id" value=<?php echo $id; ?>  id="pro_id"/>
+                </div>
+            </li>
+        </ul>
+    </div>
+</form>
+
+<div id ="popup-mpdal"></div>
+<script type="text/javascript">
+    require(["jquery"], function ($) {
+        $(document).ready(function () {
+            $('#notifyme').click(function () {
+                if ($('#stockform').valid()) {
+                    var baseurl = "<?php echo $block->getPostformUrl("productstocknotification/index/index"); ?>";
+                    $('#notifyme').prop('disabled', true);
+                    request = $.ajax({
+                        url: baseurl,
+                        type: "post",
+                        data: $('#stockform').serialize()
+                    });
+
+                    request.done(function (response, textStatus, jqXHR) {
+                        $('#notifyme').prop('disabled', false);
+                        $('#stockform').trigger('reset');
+                        //document.getElementById("email_subcribe").style.display="none";
+                    });
+                    return false;
+                }
+            });
+        });
+    });
+
+
+</script>
+
+<?php endif; ?>
+
+<style>
+.email_subcribe{
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 8px;
+}
+.stockform-list1{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.stockform-list1 > li{
+    display:inline-block;
+    margin-bottom: 0px;
+}
+.stockform-list1 .input-box{
+    width:220px;
+    float:left;
+}
+.stockTitle{
+    color: #1979c3;
+}
+.modal-popup .modal-title {
+    border-bottom: 0px !important;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 0;
+    min-height: 1em;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+}
+</style>
+<?php } ?>

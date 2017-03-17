@@ -1,0 +1,109 @@
+.catalog-product-view .stockform-list1 #email{font-size: 13px !important;}
+
+@media only screen and (max-width:1199px){
+    
+  .support-center-option {
+    min-height: 350px;
+    width: 188px;
+
+}  
+}
+
+@media only screen and (max-width:1099px){
+    .navigation_bottom_block .nav-bottom-section > div{width: 13.85%;}
+    .foot_mail_us p.no-margin {word-wrap:break-word;}
+    .navigation_bottom_block .nav-bottom-section > div{width: 11.85%;}
+    .block_above_footer.container .footer_top{padding: 0 20px;}
+    .block_above_footer.container .footer_top a img{width: 49%;}
+    .product-info-main .page-title-wrapper.product .page-title{font-size: 30px; line-height: 36px;}
+}
+@media only screen and (max-width:1023px){
+    .page-products .toolbar .limiter{float: left;}
+    .product-info-main .page-title-wrapper.product .page-title{font-size: 20px; line-height: 26px;}
+    .cust-video .action.primary.show-video, .cust-video .action.primary.down-broch{width: 100%; margin: 0 0 10px;}
+    .product-info-main .box-tocart .action.tocart, .product-options-bottom .box-tocart .action.tocart{min-width: inherit;}
+    .contactfrom_left, .contactfrom_right {width: 100%;}
+    .cmspage_content .page-title h1{font-size: 30px;}
+    .support-center-option {
+    min-height: 350px;
+    width: 188px;
+}
+#page_body_support_pages div.support-center-option:nth-child(6){
+    margin-left: 0 !important;
+}
+.support-center-option.option1, .support-center-option.option4, .support-center-option.option7 {
+    margin-left: 0;
+}
+.support-center-option.option5 {
+    margin-left: 14px;;
+}
+}
+@media only screen and (max-width:991px){
+    .support-center-option {
+    width: 198px;
+}
+}
+@media only screen and (max-width:767px){
+    .support-center-option {
+    min-height: 318px;
+    width: 40%;
+}
+.support-center-option.option1, .support-center-option.option3, .support-center-option.option7, .support-center-option.option5 {
+    margin-left: 0;
+}
+.support-center-option.option4 {
+    margin-left: 14px;;
+}
+    .block_above_footer.container .footer_top a img{width: 100%;}
+    .block.itemslider-responsive{margin-bottom: 0;}
+    .footer-container.page-footer .footer-primary-container .container{padding: 0 20px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+    .newsletter-wrapper{vertical-align: middle;}
+    .footer-container .item-right{text-align: center;}
+    .page-products .sorter {position: relative; right: auto; top: auto; z-index: 1;}
+    .modes #modes-label{margin-top: 0;}
+    .toolbar .modes{margin: 10px 0 5px;}
+    .cust-video .action.primary.show-video, .cust-video .action.primary.down-broch{width: 130px;}
+    .modes-mode:before {
+        -webkit-font-smoothing: antialiased;
+        font-size: 24px;
+        line-height: inherit;
+        color: #333;
+        content: '\e60d';
+        font-family: 'icons-blank-theme';
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: normal;
+        overflow: hidden;
+        speak: none;
+        text-align: center;
+    }
+    .mode-list:before {
+        content: '\e60b';
+    }
+    .modes-mode.active span, .modes-mode.mode-list span{display: none;}
+    .block.newsletter .title, .block.newsletter{width: 100%;}
+    .footer-container .footer-bottom .item{margin: 0; width: 100%;}
+    .cmspages_left, .cmspages_right{width:100%;}
+    .cmspages_right .contactfrom_left #contact-form .field{width:100%; padding-right: 0;}
+    .cmspages_right .contactfrom_left .actions-toolbar .primary{float: left; margin-bottom: 20px;}
+    .cmspage_content .page-title h1{font-size: 22px;}
+    .light li, .wheel-walk-pr li {float: left; padding: 1%; width: 48%;}
+    .light li a, .wheel-walk-pr li a{font-size: 12px;}
+}
+@media only screen and (max-width:479px){
+        .support-center-option {
+    width: 87%;
+    min-height: inherit;
+    height: inherit;
+    padding-bottom: 30px;
+}
+.support-center-option.option1, .support-center-option.option3, .support-center-option.option7, .support-center-option.option5 {
+    margin-left: 14px;
+}
+    .toolbar .sorter, .toolbar .modes, .page-products .toolbar .limiter{font-size: 11px;}
+    .toolbar .modes{margin: 8px 0;}
+    .page-products .toolbar .limiter{margin-top: 10px;}
+    .toolbar-sorter #sorter{width: 100px;}
+    .mfp-auto-cursor .mfp-content, .mfp-auto-cursor .mfp-content iframe{width: 100% !important;}
+    .light li, .wheel-walk-pr li {float: left; padding: 1% 0; width: 100%;}
+}

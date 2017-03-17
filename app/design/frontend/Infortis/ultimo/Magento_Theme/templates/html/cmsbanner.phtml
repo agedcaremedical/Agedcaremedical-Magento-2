@@ -1,0 +1,23 @@
+<?php
+        $routeName = $this->getRequest()->getRouteName();
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $cmsPage = $objectManager->get('\Magento\Cms\Model\Page');
+        $identifier = $cmsPage->getIdentifier();
+      
+?>
+
+<?php if($routeName == 'cms' && $identifier == 'about-us' || $routeName == 'cms' && $identifier == 'terms-and-conditions' || $routeName == 'cms' && $identifier == 'buying-online-with-a-credit-card' || $routeName == 'cms' && $identifier == 'refund-policy' || $routeName == 'cms' && $identifier == 'delivery-policy' || $routeName == 'cms' && $identifier == 'privacy-policy' || $routeName == 'cms' && $identifier == 'security'): ?>
+<div class="banner-container">
+    <img src="<?php echo $block->getViewFileUrl('images/about-us.jpg'); ?>" alt="">
+</div>
+<?php endif; ?>
+<?php if($routeName == 'cms' && $identifier == 'contacts' || $routeName == 'cms' && $identifier == 'support-centre'): ?>
+<div class="banner-container">
+    <img src="<?php echo $block->getViewFileUrl('images/contacts.jpg'); ?>" alt="">
+</div>
+<?php endif; ?>
+<?php if($routeName == 'cms' && $identifier == 'continence-range-and-advice' || $routeName == 'cms' && $identifier == 'mobility-products-and-tips' || $routeName == 'cms' && $identifier == 'living-stronger-daily-aids' || $routeName == 'cms' && $identifier == 'healthy-living' || $routeName == 'cms' && $identifier == 'risk-management' || $routeName == 'cms' && $identifier == 'relieving-pain' || $routeName == 'cms' && $identifier == 'staying-at-home' || $routeName == 'cms' && $identifier == 'transitioning-into-care' || $routeName == 'cms' && $identifier == 'transitioning-into-care' || $routeName == 'cms' && $identifier == 'assisting-the-carer' || $routeName == 'cms' && $identifier == 'government-and-aged-care'): ?>
+<div class="banner-container">
+    <img src="<?php echo $block->getViewFileUrl('images/continence.jpg'); ?>" alt="continence.jpg">
+</div>
+<?php endif; ?>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="emipro" translate="label" sortOrder="100">
+            <label>Emipro</label>
+        </tab>
+
+        <section id="productstocknotify" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="0">
+            <label>Product Stock Notification</label> <!-- Your extension name -->
+            <tab>emipro</tab>
+            <resource>Emipro_Productstocknotification::configuration</resource>
+            
+            <group id="licence" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1"> 
+                <label>Licence</label>
+            <!-- Field Id must be 'licence'-->
+                <field id="licence" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Licence Key</label>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+            
+            <group id="stocknotify" translate="label" type="text"  sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Stock Notification Settings</label>
+                <!-- create text type field -->
+               <field id="active" translate="label" type="select" sortOrder="2" showInDefault="1" showInStore="1" showInWebsite="0">
+                    <label>Product Stock Notification</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+               </field>
+               <field id="stockemail" translate="label" type="select" sortOrder="3" showInDefault="1" showInStore="1" showInWebsite="0">
+                    <label>Stock Notification Email Template</label>
+                    <comment>Email will be sent to customer.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                    <depends><field id="active">1</field></depends>
+               </field>
+            </group>
+        </section>        
+    </system>
+</config>

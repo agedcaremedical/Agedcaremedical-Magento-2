@@ -1,0 +1,43 @@
+<?php echo __('Module Ready')?>
+
+
+<?php/*****
+      *
+      *1. One way Module colllection call.
+      *
+      *
+***/ ?>
+
+
+
+<?php 
+/** @var \Agedcareandmedical\Storelocator\Model\Resource\Items\Collection $storelocatorCollection */
+   /*  $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+     
+     $storelocatorCollection = $objectManager->create('Agedcareandmedical\Storelocator\Model\Resource\Items\Collection');
+    
+     $storelocatorCollection->load(); */
+
+?>
+<?php/*  foreach($storelocatorCollection as $storelocator){
+    
+ echo "<pre>";print_r($storelocator->getData());//echo 'Name  =  '.$storelocator->getTitle().'<br>';
+ 
+
+ 
+}*/ ?>
+
+<?/***
+   *
+   *
+   *2. Another Way module collection.
+   *
+   ***/?>
+
+	
+
+<?php /*$storelocatorCollection = $this->getStorelocatorCollection(); ?>
+
+<?php foreach($storelocatorCollection as $storelocator){
+ echo "<pre>";print_r($storelocator->getData());//echo $storelocator->getTitle();
+} */?>

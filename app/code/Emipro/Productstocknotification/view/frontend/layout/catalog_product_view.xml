@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="alert.urls">
+        <block class="Emipro\Productstocknotification\Block\Product\View"
+            name="productstocknotification.productstocknotification.view"
+            template="Emipro_Productstocknotification::product/view.phtml" before="-">
+        </block>
+    </referenceContainer>
+</body>
